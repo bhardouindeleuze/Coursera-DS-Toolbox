@@ -1,5 +1,5 @@
 ---
-title: "Cars Analysis"
+title: "Cars Analysis - Toolbox Assignment"
 author: "Boris HD"
 date: "5/9/2021"
 output: pdf_document
@@ -9,19 +9,24 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Overview
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This file "Cars Analysis.Rmd" is an R Markdown document as part of the "Peer-graded Assignment: Assemble your toolbox" for the Coursera "Data Scientist Toolbox" assignment. 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The Coursera-DS-Toolbox.Rproj file contains the RStudio project file. 
+The Cars-Analysis.pdf file is the result of using the **Knit** button. This document includes both content as well as the output of any embedded R code chunks within this file document.
+
+## Loading cars data
+
+The code below loads the "cars" dataset and displays a summary of the "speed" and "dist" attributes:
 
 ```{r cars}
 summary(cars)
 ```
 
-## Including Plots
+## Simple Plot
 
-You can also embed plots, for example:
+The simple plot chart below displays the pressure as a function of the temperature:
 
 ```{r pressure, echo=FALSE}
 plot(pressure)
