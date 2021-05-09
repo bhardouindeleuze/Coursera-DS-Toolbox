@@ -28,3 +28,15 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Additional content
+
+Below is the additional content used to provide more information on cars data
+Please make sure the "ggplot2" package is installed, using "install.packages(\"ggplot2\')
+
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
