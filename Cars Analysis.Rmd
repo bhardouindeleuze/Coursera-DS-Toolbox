@@ -31,12 +31,17 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ## Additional content
 
-Below is the additional content used to provide more information on cars data
-Please make sure the "ggplot2" package is installed, using "install.packages(\"ggplot2\')
+Below is the additional content used to provide more information on cars data using the ggplot2 package.
+*Please make sure the "ggplot2" package is installed, using the "install.packages(\"ggplot2\')" command*
+
+The chart below displays a scatter-plot where the mpg on a highway is a function of the displacement 'displ' of the engine. Additionally, the plots are categorized by the class of the car. Each class is represented by a different color.
 
 ```{r, echo=FALSE}
 library(ggplot2)
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
 ```
+
+Through the chart we can identify a correlation between the displacement and the highway mpg, where the bigger the displacement, the lower the mpg.
+We can also identify another correlation, between the size of the car and the displacement, where the bigger the car the bigger the engine displacement. One notable exception, the "2seater" class; while being small cars tend to have a high displacement, yet a lower highway mpg compared to other car classes with a similar displacement.
 
